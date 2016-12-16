@@ -2,7 +2,7 @@
 standardBuild {
     environment = 'python2.7.12'
     mainScript = '''
-python -- version
+python --version
 python welcome.py
 '''
     postScript = '''
