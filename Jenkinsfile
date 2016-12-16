@@ -1,12 +1,11 @@
-@Library('github.com/cloudbeers/multibranch-demo-lib') _
+@Library('github.com/mramanathan/multibranch-demo-lib') _
 standardBuild {
-    environment = 'golang:1.5.0'
+    environment = 'python2.7.12'
     mainScript = '''
-go version
-go build -v hello-world.go
+python -- version
+python welcome.py
 '''
     postScript = '''
 ls -l
-./hello-world
 '''
 }
